@@ -50,7 +50,7 @@ body::selection {
 }
 
 .control-panel,
-.axis-panel {
+.control-panel {
   pointer-events: auto;
   padding: 14px;
   border: 1px solid rgba(94, 240, 255, 0.24);
@@ -63,8 +63,7 @@ body::selection {
   max-width: 240px;
 }
 
-.panel-title,
-.axis-label {
+.panel-title {
   font-size: 11px;
   color: #89d1ff;
   text-transform: uppercase;

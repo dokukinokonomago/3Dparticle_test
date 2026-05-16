@@ -24,6 +24,10 @@ export default function MemorySpherePlayground() {
     }))
   }
 
+  const handleReset = () => {
+    setCameraState(viewPresets.default)
+  }
+
   return (
     <div className="playground-shell">
       <Canvas
@@ -66,12 +70,10 @@ export default function MemorySpherePlayground() {
             <span>Zoom</span>
             <button type="button" onClick={() => handleZoom(0.6)}>+</button>
           </div>
+          <div className="button-row">
+            <button type="button" onClick={handleReset}>RESET</button>
+          </div>
           <div className="hint">Drag to orbit • Wheel to zoom</div>
-        </div>
-        <div className="axis-panel">
-          <div className="axis-label">AXIS GRID</div>
-          <div>X + Y + Z</div>
-          <div className="axis-footer">Fine-grained angle exploration</div>
         </div>
       </div>
     </div>
